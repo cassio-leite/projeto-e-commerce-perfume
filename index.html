@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parfume</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <link rel="shortcut icon" href="./src/imagens/favicon (2).png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./src/imagens/logo.png" alt="Logo MagickIA">
+    </header>
+    <main class="container">
+        <h1 class="produtos">Produtos</h1>
+        <div class="filtros">
+            <div class="categorias-perfumes">
+                <label for="categoria">Categoria</label>
+                <select id="categoria" class="categoria">
+                    <option value="">Selecione um Perfume</option>
+                    <option value="diário/casual">Diário/Casual</option>
+                    <option value="noite/ocasiões especiais">Noite/Ocasiões Especiais</option>
+                    <option value="verão/climas quentes">Verão/Climas Quentes</option>
+                    <option value="inverno/climas frios">Inverno/Climas Frios</option>
+                </select>
+            </div>
+            <div class="preco-perfumes">
+                <label for="preco">Preço máximo (R$)</label>
+                <input type="text" id="preco" class="preco" placeholder="Ex: 100">
+            </div>
+            <button class="btn-filtrar">Aplicar filtros</button>
+        </div>
+        <ul class="perfumes">
+            <li class="perfume" data-categoria="Diário/Casual" data-preco="100">
+                <img src="./src/imagens/Casual.png" alt="Casual">
+
+                <div class="informacoes">
+                    <h2 class="nome-perfume">Casual</h2>
+                    <span class="categoria">Categoria: Diário/Casual</span>
+                    <span class="preco">R$ 100,00</span>
+                    <a href="http://wa.me/5533999956105?text=Olá, quero comprar a carta Arkanon!" class="btn-comprar"
+                        target="_blank">Comprar</a>
+
+                </div>
+            </li>
+
+            <li class="perfume" data-categoria="Diário/Casual" data-preco="110">
+                <img src="./src/imagens/Everyday Chic.png" alt="Everyday Chic" />
+                <div class="informacoes">
+                    <h2 class="nome-perfume">Everyday Chic</h2>
+                    <span class="categoria">Categoria: Diário/Casual</span>
+                    <span class="preco">R$ 110,00</span>
+                    <a href="http://wa.me/5533999956105?text=Olá, quero comprar a carta Lymara!" class="btn-comprar"
+                        target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <li class="perfume" data-categoria="Noite/Ocasiões Especiais" data-preco="219">
+                <img src="./src/imagens/Eternal Night.png" alt="Eternal Night" />
+                <div class="informacoes">
+                    <h2 class="nome-perfume">Eternal Night</h2>
+                    <span class="categoria">Categoria: Noite/Ocasiões Especiais</span>
+                    <span class="preco">R$ 219,00</span>
+                    <a href="http://wa.me/5533999956105?text=Olá, quero comprar a carta Kaelthar!" class="btn-comprar"
+                        target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <li class="perfume" data-categoria="Noite/Ocasiões Especiais" data-preco="220">
+                <img src="./src/imagens/Midnight Bloom.png" alt="Midnight Bloom" />
+                <div class="informacoes">
+                    <h2 class="nome-perfume">Midnight Bloom</h2>
+                    <span class="categoria">Categoria: Noite/Ocasiões Especiais</span>
+                    <span class="preco">R$ 220,00</span>
+                    <a href="http://wa.me/5533999956105?text=Olá, quero comprar a carta Maldrik!" class="btn-comprar"
+                        target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <li class="perfume" data-categoria="Inverno/Climas Frios" data-preco="100">
+                <img src="./src/imagens/Winter.png" alt="Winter" />
+                <div class="informacoes">
+                    <h2 class="nome-perfume">Winter</h2>
+                    <span class="categoria">Categoria: Inverno/Climas Frios</span>
+                    <span class="preco">R$ 100,00</span>
+                    <a href="http://wa.me/5533999956105?text=Olá, quero comprar a carta Drahven!" class="btn-comprar"
+                        target="_blank">Comprar</a>
+                </div>
+            </li>
+
+            <li class="perfume" data-categoria="Verão/Climas Quentes" data-preco="120">
+                <img src="./src/imagens/Summer Breeze.png" alt="Summer Breeze" />
+                <div class="informacoes">
+                    <h2 class="nome-perfume">Summer Breeze</h2>
+                    <span class="categoria">Categoria: Verão/Climas Quentes</span>
+                    <span class="preco">R$ 120,00</span>
+                    <a href="http://wa.me/5533999956105?text=Olá, quero comprar a carta Nyxsombra!" class="btn-comprar"
+                        target="_blank">Comprar</a>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer class="rodape">@2025 - Todos os direitos reservados</footer>
+
+    <script src="./src/js/index.js"></script>
+    
+</body>
+
+</html>
